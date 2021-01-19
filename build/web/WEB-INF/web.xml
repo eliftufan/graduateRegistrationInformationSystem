@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>AdminGiris.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminSaveServlet</servlet-name>
+        <servlet-class>AdminKaydet.AdminSaveServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OgrenciKaydetServlet</servlet-name>
+        <servlet-class>OgrenciKaydet.OgrenciKaydetServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OgrenciLoginServlet</servlet-name>
+        <servlet-class>OgrenciGiris.OgrenciLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminSaveServlet</servlet-name>
+        <url-pattern>/AdminSaveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OgrenciKaydetServlet</servlet-name>
+        <url-pattern>/OgrenciKaydetServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OgrenciLoginServlet</servlet-name>
+        <url-pattern>/OgrenciLoginServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
